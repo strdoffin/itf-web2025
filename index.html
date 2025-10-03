@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>68070153</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="w-full p-3 flex justify-between bg-blue-500 text-white">
+        <p>68070153</p>
+        <h1>ITF Website</h1>
+        <p>Week 14</p>
+    </nav>
+    <div class="flex p-3 flex items-center">
+        <img class="w-24 h-24" src="https://i.pinimg.com/originals/17/49/88/174988b1ff5451b075fdae22b50fa165.png"
+            alt="meme">
+        <div class="h-full flex flex-col justify-center">
+            <h2>ITF Simple Bank</h2>
+            <p>Welcome to my ∞ HTML+CSS+JS website!</p>
+        </div>
+    </div>
+    <div class="flex justify-center mb-2">
+        <hr class="w-[80%] border-gray-300">
+    </div>
+    <section class="w-full flex justify-center">
+        <textarea class="bg-gray-200 w-[80%] h-[500px]" name="output" id="output"></textarea>
+    </section>
+    <section class="grid grid-cols-2 mx-auto container">
+        <div class="p-3 flex flex-col gap-10">
+            <div>
+                <h3 class="mb-2 text-xl font-bold">Account Overview</h3>
+                <div class="flex gap-7">
+                    <img class="w-20 h-20"
+                        src="https://tse4.mm.bing.net/th/id/OIP.QehAc0uZk05hO9_IlLjyPwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="person">
+                    <div class="">
+                        <h4 class="font-bold">Account Information</p>
+                            <p class="font-thin">Name: Yossawat Imjai</p>
+                            <p class="font-thin">Type: Savings Account</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="mb-2 text-xl font-bold">Balance Information</h3>
+                <div class="flex gap-7 items-center">
+                    <img class="w-20 h-20"
+                        src="https://tse4.mm.bing.net/th/id/OIP.oqmUZ9Xn6kkyxGuFU6dg0gHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="person">
+                    <div class="flex flex-col gap-2">
+                        <div class="grid grid-cols-2 gap-2">
+                            <p class="font-thin">Current Account Balance:</p>
+                            <input type="text" class="h-fit border rounded">
+                        </div>
+                        <div class="grid grid-cols-2">
+                            <p class="font-thin">Current Cash Balance:</p>
+                            <input type="text" class="h-fit  border rounded">
+                        </div>
+                        <button class="w-fit p-1 font-thin rounded text-xs border bg-gray-200">Change</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="mb-2 text-xl font-bold">Bank Operation</h3>
+                <div class="flex gap-7">
+                    <img class="w-20 h-20"
+                        src="https://cdn-icons-png.flaticon.com/512/903/903458.png"
+                        alt="person">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex h-fit gap-2">
+                            <select class="text-xs border rounded">
+                                <option value="Deposit">Deposit</option>
+                                <option value="Withdraw">Withdraw</option>
+                            </select>
+                            <input class="border rounded" type="text">
+                        </div>
+                        <button class="w-fit p-1 font-thin rounded text-xs border bg-gray-200">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-3 flex flex-col gap-2">
+            <h3 class="text-xl font-bold">Financial Tools</h3>
+            <div class="flex gap-7 items-center">
+                <img class="w-20 h-20"
+                    src="https://static.vecteezy.com/system/resources/previews/008/854/705/original/3d-coin-for-finance-or-business-illustration-png.png"
+                    alt="person">
+                <h4 class="font-bold">Currency Converter</p>
+                    <div class="flex flex-col gap-2">
+                        <div class="grid grid-cols-2 xl:w-60">
+                            <div class="flex flex-col gap-2">
+                                <p class="font-thin">Input Balance:</p>
+                                <p class="font-thin">Output Balance:</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <input type="text" class="border rounded">
+                                <input type="text" class="border rounded">
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <p class="font-thin">Input Currency:</p>
+                            <select class="w-17 border rounded">
+                                <option value="usd">USD</option>
+                                <option value="THB">THB</option>
+                            </select>
+                            <button class="w-fit px-2 font-thin rounded text-xs border bg-gray-200">Convert</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
