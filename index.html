@@ -95,17 +95,17 @@
 								<p class="font-thin">Output Balance:</p>
 							</div>
 							<div class="flex flex-col gap-2">
-								<input type="text" placeholder="0" class="px-2 h-fit border rounded">
-								<input type="text" placeholder="0" class="px-2 h-fit border rounded">
+								<input type="text" id="currency" placeholder="0" class="px-2 h-fit border rounded">
+								<input type="text" id="currencyoutput" placeholder="0" disabled class="px-2 h-fit border rounded">
 							</div>
 						</div>
 						<div class="flex gap-2">
 							<p class="font-thin">Input Currency:</p>
-							<select class="w-17 border rounded">
+							<select id="ctype" class="w-17 border rounded">
 								<option value="usd">USD</option>
-								<option value="THB">THB</option>
+								<option value="thb">THB</option>
 							</select>
-							<button class="w-fit px-2 font-thin rounded text-xs border bg-gray-200">Convert</button>
+							<button class="w-fit px-2 font-thin rounded text-xs border bg-gray-200" onclick="convertcurrency()">Convert</button>
 						</div>
 					</div>
 				</div>

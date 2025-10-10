@@ -36,3 +36,18 @@ function operation(){
 		}
 	}
 }
+
+async function convertcurrency() {
+	const currency = document.getElementById("currency").value
+	const ctype = document.getElementById("ctype").value
+	const response = await fetch("http://localhost:3000/currency", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+			currency: currency,
+			type: ctype
+        })
+    })
+	const data = await response.json()
+	document.getElementById("currencyoutput").value = data.exchange
+}
